@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Abstract
+namespace Business.Abstract
 {
-    //IEntity implement eden class bir veritabanı tablosudur.
-    public interface IEntity
+    public interface ICategoryService
     {
-       
+        List<Category> GetAll();
+        Category GetById(int categoryId);
     }
 }

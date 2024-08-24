@@ -1,5 +1,4 @@
-﻿using Entities.Abstract;
-using Entities.Concrete;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +6,10 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     //gwnwric constraint
-    //class: referans tip olabilir
+    //class: referans tip 
     //IEntity: IEntity olabilir veya IEntity iplemente eden bir nesne olabilir 
     //new(): new'lenebilir olmalı
     public interface IEntityRepository<T> where T : class, IEntity,new()
